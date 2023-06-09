@@ -51,9 +51,57 @@ pre {
 
 /* Navigation Bar */
 
+.navbar {
+  height: 70px;
+}
+
 .navbar .flex {
   justify-content: space-between;
 }
 nav ul li a:hover {
   border-bottom: 2px solid #fff;
+}
+
+/* Show Case */
+
+.showcase {
+  height: 400px;
+  position: relative;
+}
+.showcase .grid {
+  grid-template-columns: 50% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  padding: 3px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
 }

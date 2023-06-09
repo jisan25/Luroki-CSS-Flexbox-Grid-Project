@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <div class="navbar bg-primary">
       <div class="container flex">
-        <h1 class="logo lg"><a href="/">Loruki</a></h1>
+        <h1 class="logo"><a href="/">Loruki</a></h1>
         <nav>
           <ul class="flex">
             <li class="mx-1"><a class="pb-1" href="/">Home</a></li>
@@ -20,5 +21,64 @@
         </nav>
       </div>
     </div>
+    <!-- Showcase -->
+
+    <section class="showcase bg-primary">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1 class="md-lg my-1">Easier Deployment</h1>
+          <p class="my-2">
+            Deploy web apps of all kinds, from large scale enterprise APIs to
+            static websites for individuals. Fill out the form to try a demo of
+            our platform
+          </p>
+          <a href="features.html" class="btn btn-outline">Read More</a>
+        </div>
+        <div class="showcase-form card">
+          <h2>Request A Demo</h2>
+          <form
+            name="contact"
+            netlify-honeypot="bot-field"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label
+                >Don’t fill this out if you're human: <input name="bot-field"
+              /></label>
+            </p>
+            <div class="my-2">
+              <input
+                class="w-100 sm"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="my-2">
+              <input
+                class="w-100 sm"
+                type="text"
+                name="company"
+                placeholder="Company Name"
+                required
+              />
+            </div>
+            <div class="my-2">
+              <input
+                class="w-100 sm"
+                type="email"
+                name="Email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <input type="submit" class="btn btn-primary" value="Send" />
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

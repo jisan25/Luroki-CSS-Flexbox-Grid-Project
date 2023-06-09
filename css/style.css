@@ -68,7 +68,7 @@ pre {
 .navbar .flex {
   justify-content: space-between;
 }
-.navbar a:hover {
+.navbar nav a:hover {
   border-bottom: 2px solid #fff;
 }
 
